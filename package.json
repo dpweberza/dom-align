@@ -1,12 +1,12 @@
 {
   "name": "dom-align",
-  "version": "1.6.7",
+  "version": "1.6.8",
   "description": "Align DOM Node Flexibly ",
   "keywords": [
     "dom",
     "align"
   ],
-  "homepage": "http://github.com/yiminghe/dom-align",
+  "homepage": "https://github.com/dpweberza/dom-align",
   "files": [
     "lib",
     "es"
@@ -16,7 +16,7 @@
   "author": "yiminghe@gmail.com",
   "repository": {
     "type": "git",
-    "url": "git@github.com:yiminghe/dom-align.git"
+    "url": "git@github.com:dpweberza/dom-align.git"
   },
   "bugs": {
     "url": "http://github.com/yiminghe/dom-align/issues"
@@ -36,7 +36,8 @@
     "saucelabs": "rc-test run saucelabs",
     "test": "rc-test run test",
     "chrome-test": "rc-test run chrome-test",
-    "coverage": "rc-test run coverage"
+    "coverage": "rc-test run coverage",
+    "prepare": "rc-tools run compile"
   },
   "devDependencies": {
     "expect.js": "^0.3.1",
