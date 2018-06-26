@@ -102,7 +102,7 @@ function domAlign(el, refNode, align) {
   const isTargetNotOutOfVisible = !isOutOfVisibleRect(target);
 
   // 如果可视区域不能完全放置当前节点时允许调整
-  if (visibleRect && (overflow.adjustX || overflow.adjustY) && isTargetNotOutOfVisible) {
+  if (visibleRect && (overflow.adjustX || overflow.adjustY) && (align.alignEvenIfTargetIsNotVisible || isTargetNotOutOfVisible)) {
     if (overflow.adjustX) {
       // 如果横向不能放下
       if (isFailX(elFuturePos, elRegion, visibleRect)) {
